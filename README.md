@@ -1,2 +1,4 @@
 # WeMos_Boards
-D1 -- WeMos D1 WiFi Board
+WeMos_Boards Arduino hardware package.
+
+ESP8266 -- Based ESP8266 Board, include D1, lolin(nodemcu V3)
