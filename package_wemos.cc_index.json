@@ -38,7 +38,36 @@
         "name":"xtensa-lx106-elf-gcc",
         "version":"1.20.0-26-gb404fb9"
       } ]
-    } ],
+    },
+	{
+		"name": "WeMos LGT Boards",
+		"architecture": "avr",
+		"version": "1.0.1",
+		"category": "wemos",
+		"help": {
+		"online": "http://wemos.cc"
+		},
+		"url": "https://janedeveloper.github.io/myboard/myboard-1.0.1.zip",
+		"archiveFileName": "myboard-1.0.1.zip",
+		"checksum": "SHA-256:9c86ee28a7ce9fe33e8b07ec643316131e0031b0d22e63bb398902a5fdadbca9",
+		"size": "15125",
+		"boards": [
+		{"name": "LGT Mini"}
+		],
+		"toolsDependencies": [
+		{
+		  "packager": "arduino",
+		  "name": "avr-gcc",
+		  "version": "4.8.1-arduino5"
+		},
+		{
+		  "packager": "arduino",
+		  "name": "avrdude",
+		  "version": "6.0.1-arduino5"
+		}
+		]
+	}
+	],
 
     "tools": [ {
       "name":"esptool",
