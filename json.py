@@ -138,7 +138,7 @@ text6='''",
 }
 '''
 #print "%s" % (sys.argv[1])
-gz_filename=sys.argv[1][3:]
+gz_filename=sys.argv[1]
 #print gz_filename
 
 #ver=gz_filename[:len(gz_filename)-7]

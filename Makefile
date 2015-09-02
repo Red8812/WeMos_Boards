@@ -7,8 +7,10 @@ esp8266:
 	tar -zcvf $(file_esp8266) ESP8266
 	./json.py $(file_esp8266) $(ver_esp8266) $(file_lgt) $(ver_lgt)
 lgt:
-	tar -zcvf $(file_esp8266) LGT
+	tar -zcvf $(file_lgt) LGT
 	./json.py $(file_esp8266) $(ver_esp8266) $(file_lgt) $(ver_lgt)
+
+all:esp8266 lgt
 
 clean:
 	rm -rf $(file_esp8266) $(file_lgt)
