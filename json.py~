@@ -200,7 +200,7 @@ size_lgt = os.path.getsize(file_lgt)
 print size_lgt
 
 f = open('package_wemos.cc_index.json', 'w')
-str1=text1+ver_esp8266+text2+file_esp8266+text3+file_esp8266+text4+sha+text5+bytes(size)+text6+text7+ver_lgt+text8+file_lgt+text9+file_lgt+text10+sha_lgt+text11+bytes(size_lgt)+text12
+str1=text1+ver_esp8266+text2+file_esp8266+text3+file_esp8266+text4+sha+text5+bytes(size)+text6+text7+ver_lgt+text8+file_lgt+text9+file_lgt+text10+sha_lgt+text11+size_lgt+text12
 f.write(str1)
 f.close()
 
