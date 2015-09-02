@@ -15,7 +15,7 @@
       "category":"wemos",
       "url":"http://www.wemos.cc/tools/wemos-esp8266-1.0.2.tar.gz",
       "archiveFileName":"wemos-esp8266-1.0.2.tar.gz",
-      "checksum":"SHA-256:4436044ec5b8c253375469226a36e249a666123ecbe792e5b78447ef197d1ada",
+      "checksum":"SHA-256:e7d70e928bd9394e1f1814a19b6d3ac20370fa6908e628a518d0688bda4806c1",
       "size":"2041603",
       "help":{
         "online":"http://wemos.cc"
@@ -38,19 +38,18 @@
         "name":"xtensa-lx106-elf-gcc",
         "version":"1.20.0-26-gb404fb9"
       } ]
-    },
-	{
+    }, {
 		"name": "WeMos LGT Boards",
 		"architecture": "avr",
-		"version": "1.0.1",
+		"version": "1.0.0",
 		"category": "wemos",
 		"help": {
 		"online": "http://wemos.cc"
 		},
-		"url": "https://janedeveloper.github.io/myboard/myboard-1.0.1.zip",
-		"archiveFileName": "myboard-1.0.1.zip",
-		"checksum": "SHA-256:9c86ee28a7ce9fe33e8b07ec643316131e0031b0d22e63bb398902a5fdadbca9",
-		"size": "15125",
+		"url": "http://www.wemos.cc/tools/wemos-lgt-1.0.0.tar.gz",
+		"archiveFileName": "wemos-lgt-1.0.0.tar.gz",
+		"checksum": "SHA-256:c47b9983afac731e0069a1d2d49e918113ea33c7c4873cc12a4bf96149ffb5b9",
+		"size": "166",
 		"boards": [
 		{"name": "LGT Mini"}
 		],
@@ -67,7 +66,7 @@
 		}
 		]
 	}
-	],
+],
 
     "tools": [ {
       "name":"esptool",
