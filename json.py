@@ -50,7 +50,41 @@ text6='''",
         "name":"xtensa-lx106-elf-gcc",
         "version":"1.20.0-26-gb404fb9"
       } ]
-    } ],
+    }, '''
+text7='''{
+		"name": "WeMos LGT Boards",
+		"architecture": "avr",
+		"version": "'''
+text8='''",
+		"category": "wemos",
+		"help": {
+		"online": "http://wemos.cc"
+		},
+		"url": "http://www.wemos.cc/tools/'''
+text9='''",
+		"archiveFileName": "'''
+text10='''",
+		"checksum": "SHA-256:'''
+text11='''",
+		"size": "'''
+text12='''",
+		"boards": [
+		{"name": "LGT Mini"}
+		],
+		"toolsDependencies": [
+		{
+		  "packager": "arduino",
+		  "name": "avr-gcc",
+		  "version": "4.8.1-arduino5"
+		},
+		{
+		  "packager": "arduino",
+		  "name": "avrdude",
+		  "version": "6.0.1-arduino5"
+		}
+		]
+	}
+],
 
     "tools": [ {
       "name":"esptool",
@@ -137,13 +171,12 @@ text6='''",
   } ]
 }
 '''
-#print "%s" % (sys.argv[1])
-gz_filename=sys.argv[1]
-#print gz_filename
 
-#ver=gz_filename[:len(gz_filename)-7]
-ver=sys.argv[2]
-print ver
+file_esp8266=sys.argv[1]
+ver_esp8266=sys.argv[2]
+file_lgt=sys.argv[3]
+ver_lgt=sys.argv[4]
+
 
 f = open(sys.argv[1],'rb')
 sh = hashlib.sha256()
@@ -155,8 +188,19 @@ f.close()
 size = os.path.getsize(sys.argv[1])
 print size
 
+
+f = open(file_lgt,'rb')
+sh_lgt = hashlib.sha256()
+sh_lgt.update(f.read())
+sha_lgt = sh_lgt.hexdigest()
+print sha_lgt
+f.close()
+
+size = os.path.getsize(file_lgt)
+print size_lgt
+
 f = open('package_wemos.cc_index.json', 'w')
-str1=text1+ver+text2+gz_filename+text3+gz_filename+text4+sha+text5+bytes(size)+text6
+str1=text1+ver_esp8266+text2+file_esp8266+text3+file_esp8266+text4+sha+text5+bytes(size)+text6+text7+ver_lgt+text8+file_lgt+text9+file_lgt+text10+sha_lgt+text11+size_lgt+text12
 f.write(str1)
 f.close()
 
