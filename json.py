@@ -20,7 +20,7 @@ text1= '''{
       "version":"'''
 text2= '''",
       "category":"wemos",
-      "url":"http://www.wemos.cc/tools/'''
+      "url":"https://github.com/wemos/WeMos_Boards/raw/master/releases/'''
 text3= '''",
       "archiveFileName":"'''
 
@@ -60,7 +60,7 @@ text8='''",
 		"help": {
 		"online": "http://wemos.cc"
 		},
-		"url": "http://www.wemos.cc/tools/'''
+		"url": "https://github.com/wemos/WeMos_Boards/raw/master/releases/'''
 text9='''",
 		"archiveFileName": "'''
 text10='''",
