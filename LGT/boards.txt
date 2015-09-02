@@ -1,0 +1,21 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+##############################################################
+
+lardu_328e.name= WeMos UNO
+lardu_328e.upload.tool=avrdude
+lardu_328e.upload.protocol=arduino
+lardu_328e.upload.maximum_size=29696
+lardu_328e.upload.speed=115200
+lardu_328e.program.tool=avrdude
+lardu_328e.bootloader.tool=avrdude
+lardu_328e.bootloader.high_fuses=0xff
+lardu_328e.bootloader.low_fuses=0xff
+lardu_328e.bootloader.extended_fuses=0x07
+lardu_328e.bootloader.file=LoLin_328D/optiboot_lolin328d.hex
+lardu_328e.bootloader.unlock_bits=0x3f
+lardu_328e.bootloader.lock_bits=0x3f
+lardu_328e.build.mcu=atmega328p
+lardu_328e.build.f_cpu=16000000L
+lardu_328e.build.core=328d
+lardu_328e.build.variant=328d
