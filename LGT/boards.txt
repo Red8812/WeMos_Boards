@@ -2,7 +2,7 @@
 
 ##############################################################
 
-lardu_328e.name= WeMos UNO
+lardu_328e.name= LGT Mini
 lardu_328e.upload.tool=avrdude
 lardu_328e.upload.protocol=arduino
 lardu_328e.upload.maximum_size=29696
