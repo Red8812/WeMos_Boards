@@ -15,7 +15,7 @@
       "category":"wemos",
       "url":"https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-esp8266-1.0.2.tar.gz",
       "archiveFileName":"wemos-esp8266-1.0.2.tar.gz",
-      "checksum":"SHA-256:96b6bbe254248dc3bb71dafca715c0bf3b8e0d9458645ef3cf5bd6d184da56a4",
+      "checksum":"SHA-256:6aa87a1ae129b2ad2ca2f544f6074dc6203bd61c28f16d244171fc441d649285",
       "size":"2041716",
       "help":{
         "online":"http://wemos.cc"
@@ -37,9 +37,7 @@
         "packager":"wemos",
         "name":"xtensa-lx106-elf-gcc",
         "version":"1.20.0-26-gb404fb9"
-      },
-
-       ]
+      }]
     }, {
 		"name": "WeMos LGT Boards",
 		"architecture": "avr",
@@ -50,7 +48,7 @@
 		},
 		"url": "https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-lgt-1.0.0.tar.gz",
 		"archiveFileName": "wemos-lgt-1.0.0.tar.gz",
-		"checksum": "SHA-256:f71e2a4d0c8bc1bb95f85dae9db90c59389fb6f0c44ed132a2cf8f867fd3010c",
+		"checksum": "SHA-256:0950c6e8fd25f584ebb1b113d36ed57133f1a52bbfdc758877fc1408d27caeb6",
 		"size": "117498",
 		"boards": [
 		{"name": "LGT Mini"}

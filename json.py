@@ -49,9 +49,7 @@ text6='''",
         "packager":"wemos",
         "name":"xtensa-lx106-elf-gcc",
         "version":"1.20.0-26-gb404fb9"
-      },
-
-       ]
+      }]
     }, '''
 text7='''{
 		"name": "WeMos LGT Boards",
