@@ -15,8 +15,8 @@
       "category":"wemos",
       "url":"https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-esp8266-1.0.2.tar.gz",
       "archiveFileName":"wemos-esp8266-1.0.2.tar.gz",
-      "checksum":"SHA-256:cc52af8f8975c20d6ac1c0e430014a8d11d0049bad08e097941f9ffab4dfd907",
-      "size":"2041603",
+      "checksum":"SHA-256:2bf53544d8debb5cdda4f7dece429e08536dbaeca046995197abd3e67310951d",
+      "size":"2041716",
       "help":{
         "online":"http://wemos.cc"
       },
@@ -37,7 +37,9 @@
         "packager":"wemos",
         "name":"xtensa-lx106-elf-gcc",
         "version":"1.20.0-26-gb404fb9"
-      } ]
+      },
+
+       ]
     }, {
 		"name": "WeMos LGT Boards",
 		"architecture": "avr",
@@ -48,7 +50,7 @@
 		},
 		"url": "https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-lgt-1.0.0.tar.gz",
 		"archiveFileName": "wemos-lgt-1.0.0.tar.gz",
-		"checksum": "SHA-256:aeee45196967cf9e0e6c06fbf7eac7361fa187cae296cbe02b86092d3229f40a",
+		"checksum": "SHA-256:dd89a0f10cb47437ad4b5d2275e40a9b78bdd953b9ae52a9cf28e1b4f043065b",
 		"size": "117498",
 		"boards": [
 		{"name": "LGT Mini"}
@@ -74,10 +76,10 @@
       "systems": [
         {
             "host":"i686-mingw32",
-            "url":"http://www.wemos.cc/tools/esptool/esptool-0.4.5-win32.zip",
+            "url":"https://raw.githubusercontent.com/wemos/WeMos_Boards/master/releases/esptool-win32-20150903.zip",
             "archiveFileName":"esptool-0.4.5-win32.zip",
-            "checksum":"SHA-256:1b0a7d254e74942d820a09281aa5dc2af1c8314ae5ee1a5abb0653d0580e531b",
-            "size":"17408"
+            "checksum":"SHA-256:70bc0b249f4690236ba5bc9ee51261d5d4baf36e964a3b34902ec2ab28dbdad7",
+            "size":"4193008"
         },
         {
             "host":"x86_64-apple-darwin",
