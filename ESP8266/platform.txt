@@ -83,7 +83,6 @@ tools.esptool.cmd=esptool
 tools.esptool.cmd.windows=espdown.exe
 
 tools.esptool.path={runtime.tools.esptool.path}
-tools.esptool.path.windows={runtime.tools.espdown.path}
 
 tools.esptool.upload.protocol=esp
 tools.esptool.upload.params.verbose=-vv
