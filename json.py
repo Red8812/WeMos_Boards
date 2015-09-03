@@ -95,7 +95,7 @@ text12='''",
         {
             "host":"i686-mingw32",
             "url":"https://raw.githubusercontent.com/wemos/WeMos_Boards/master/releases/esptool-win32-20150903.zip",
-            "archiveFileName":"esptool-0.4.5-win32.zip",
+            "archiveFileName":"esptool-win32-20150903.zip",
             "checksum":"SHA-256:70bc0b249f4690236ba5bc9ee51261d5d4baf36e964a3b34902ec2ab28dbdad7",
             "size":"4193008"
         },
