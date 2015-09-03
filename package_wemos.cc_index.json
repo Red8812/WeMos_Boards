@@ -15,7 +15,7 @@
       "category":"wemos",
       "url":"https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-esp8266-1.0.2.tar.gz",
       "archiveFileName":"wemos-esp8266-1.0.2.tar.gz",
-      "checksum":"SHA-256:2bf53544d8debb5cdda4f7dece429e08536dbaeca046995197abd3e67310951d",
+      "checksum":"SHA-256:96b6bbe254248dc3bb71dafca715c0bf3b8e0d9458645ef3cf5bd6d184da56a4",
       "size":"2041716",
       "help":{
         "online":"http://wemos.cc"
@@ -50,7 +50,7 @@
 		},
 		"url": "https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-lgt-1.0.0.tar.gz",
 		"archiveFileName": "wemos-lgt-1.0.0.tar.gz",
-		"checksum": "SHA-256:dd89a0f10cb47437ad4b5d2275e40a9b78bdd953b9ae52a9cf28e1b4f043065b",
+		"checksum": "SHA-256:f71e2a4d0c8bc1bb95f85dae9db90c59389fb6f0c44ed132a2cf8f867fd3010c",
 		"size": "117498",
 		"boards": [
 		{"name": "LGT Mini"}
@@ -77,7 +77,7 @@
         {
             "host":"i686-mingw32",
             "url":"https://raw.githubusercontent.com/wemos/WeMos_Boards/master/releases/esptool-win32-20150903.zip",
-            "archiveFileName":"esptool-0.4.5-win32.zip",
+            "archiveFileName":"esptool-win32-20150903.zip",
             "checksum":"SHA-256:70bc0b249f4690236ba5bc9ee51261d5d4baf36e964a3b34902ec2ab28dbdad7",
             "size":"4193008"
         },
