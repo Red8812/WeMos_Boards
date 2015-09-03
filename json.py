@@ -49,7 +49,9 @@ text6='''",
         "packager":"wemos",
         "name":"xtensa-lx106-elf-gcc",
         "version":"1.20.0-26-gb404fb9"
-      } ]
+      },
+
+       ]
     }, '''
 text7='''{
 		"name": "WeMos LGT Boards",
@@ -92,10 +94,10 @@ text12='''",
       "systems": [
         {
             "host":"i686-mingw32",
-            "url":"http://www.wemos.cc/tools/esptool/esptool-0.4.5-win32.zip",
+            "url":"https://raw.githubusercontent.com/wemos/WeMos_Boards/master/releases/esptool-win32-20150903.zip",
             "archiveFileName":"esptool-0.4.5-win32.zip",
-            "checksum":"SHA-256:1b0a7d254e74942d820a09281aa5dc2af1c8314ae5ee1a5abb0653d0580e531b",
-            "size":"17408"
+            "checksum":"SHA-256:70bc0b249f4690236ba5bc9ee51261d5d4baf36e964a3b34902ec2ab28dbdad7",
+            "size":"4193008"
         },
         {
             "host":"x86_64-apple-darwin",

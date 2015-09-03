@@ -80,13 +80,19 @@ recipe.size.regex.data=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
 # ------------------------------
 
 tools.esptool.cmd=esptool
-tools.esptool.cmd.windows=esptool.exe
+tools.esptool.cmd.windows=espdown.exe
+
 tools.esptool.path={runtime.tools.esptool.path}
+tools.esptool.path.windows={runtime.tools.espdown.path}
 
 tools.esptool.upload.protocol=esp
 tools.esptool.upload.params.verbose=-vv
 tools.esptool.upload.params.quiet=
+
 tools.esptool.upload.pattern="{path}/{cmd}" {upload.verbose} -cd {upload.resetmethod} -cb {upload.speed} -cp "{serial.port}" -ca 0x00000 -cf "{build.path}/{build.project_name}.bin"
+
+tools.esptool.upload.pattern.windows="{path}/{cmd}"  -b {upload.speed} -p "{serial.port}" write_flash -fs 32m 0x00000 "{build.path}/{build.project_name}.bin"
+
 tools.esptool.network.pattern=python "{path}/espota.py" "{serial.port}" "{network.port}" "{build.path}/{build.project_name}.bin"
 
 tools.espota.cmd=python
