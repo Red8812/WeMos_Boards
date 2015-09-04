@@ -10,8 +10,8 @@ esp8266:
 lgt:
 	tar -zcvf $(file_lgt) LGT
 
-all:gzesp8266 gzlgt
-	python json.py $(file_esp8266) $(ver_esp8266) $(file_lgt) $(ver_lgt)
+all:esp8266 lgt
+	python do_json.py $(file_esp8266) $(ver_esp8266) $(file_lgt) $(ver_lgt)
 	mv *.gz releases/
 clean:
 	rm -rf $(file_esp8266) $(file_lgt)

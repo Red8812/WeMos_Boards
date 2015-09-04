@@ -15,8 +15,8 @@
       "category":"wemos",
       "url":"https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-esp8266-1.0.2.tar.gz",
       "archiveFileName":"wemos-esp8266-1.0.2.tar.gz",
-      "checksum":"SHA-256:88b87d517567bd8bb076406f8d266d2b1e9c920b8ac1738630c61506384d2a06",
-      "size":"2041761",
+      "checksum":"SHA-256:1b322fb62da4e116973bfce8a13d994eabf439abbac6397b2ba79a6e4a2fd816",
+      "size":"2042118",
       "help":{
         "online":"http://wemos.cc"
       },
@@ -48,8 +48,8 @@
 		},
 		"url": "https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-lgt-1.0.0.tar.gz",
 		"archiveFileName": "wemos-lgt-1.0.0.tar.gz",
-		"checksum": "SHA-256:a86c1a184061e053b529057f2bc2cd520da4aec5beba1a4c56c3cac0c966264e",
-		"size": "114424",
+		"checksum": "SHA-256:1077d90769c9d173c16bac517befc21f8604780d681dfef873d038c81b6a427d",
+		"size": "114420",
 		"boards": [
 		{"name": "LGT Mini"}
 		],
