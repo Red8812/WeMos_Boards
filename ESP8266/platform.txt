@@ -79,16 +79,18 @@ recipe.size.regex.data=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
 
 # ------------------------------
 
-tools.esptool.cmd=esptool
+tools.esptool.cmd=python
 tools.esptool.cmd.windows=espdown.exe
-
-tools.esptool.path={runtime.tools.esptool.path}
+tools.esptool.path={runtime.platform.path}/tools
+tools.esptool.path.windows={runtime.tools.esptool.path}
 
 tools.esptool.upload.protocol=esp
 tools.esptool.upload.params.verbose=-vv
 tools.esptool.upload.params.quiet=
 
-tools.esptool.upload.pattern="{path}/{cmd}" {upload.verbose} -cd {upload.resetmethod} -cb {upload.speed} -cp "{serial.port}" -ca 0x00000 -cf "{build.path}/{build.project_name}.bin"
+#tools.esptool.upload.pattern="{path}/{cmd}" {upload.verbose} -cd {upload.resetmethod} -cb {upload.speed} -cp "{serial.port}" -ca 0x00000 -cf "{build.path}/{build.project_name}.bin"
+
+tools.esptool.upload.pattern="{cmd}" "{path}/esptool.py"  -b {upload.speed} -p "{serial.port}" write_flash -fs 32m 0x00000 "{build.path}/{build.project_name}.bin"
 
 tools.esptool.upload.pattern.windows="{path}/{cmd}"  -b {upload.speed} -p "{serial.port}" write_flash -fs 32m 0x00000 "{build.path}/{build.project_name}.bin"
 
