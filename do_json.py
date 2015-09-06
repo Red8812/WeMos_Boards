@@ -60,4 +60,43 @@ f.write(json.dumps(parsed_json))
 f.close()
 ###
 
+#do temp_cn.json
+f=open('temp_cn.json','r')
+f_tmp=f.read()#get json_cn_temp
+f.close()
+
+parsed_json = json.loads(f_tmp)
+j= parsed_json['packages']
+#WeMos WiFi Boards
+j[0]['platforms'][0]['version']=ver_esp8266
+j[0]['platforms'][0]['url']="http://wemos.oss-cn-shenzhen.aliyuncs.com/"+file_esp8266
+j[0]['platforms'][0]['archiveFileName']=file_esp8266
+j[0]['platforms'][0]['checksum']="SHA-256:"+sha
+j[0]['platforms'][0]['size']=str(size)
+#WeMos LGT Boards
+j[0]['platforms'][1]['version']=ver_lgt
+j[0]['platforms'][1]['url']="http://wemos.oss-cn-shenzhen.aliyuncs.com/"+file_lgt
+j[0]['platforms'][1]['archiveFileName']=file_lgt
+j[0]['platforms'][1]['checksum']="SHA-256:"+sha_lgt
+j[0]['platforms'][1]['size']=str(size_lgt)
+
+
+f = open('package_wemos.cc_cn_index.json', 'w')
+f.write(json.dumps(parsed_json))
+f.close()
+###
+
+endpoint="oss-cn-shenzhen.aliyuncs.com"
+accessKeyId, accessKeySecret="DqGwcOvtbSIe63M7","dIEDqzWUH2AxbUnbZfVOqrDsTbkJWP"
+bucket="wemos"
+oss = OssAPI(endpoint, accessKeyId, accessKeySecret)
+
+res=oss.put_object_from_file(bucket,file_esp8266,"releases/"+file_esp8266)
+print "%s\n%s" % (res.status, res.read())
+
+res=oss.put_object_from_file(bucket,file_lgt,"releases/"+file_lgt)
+print "%s\n%s" % (res.status, res.read())
+
+res=oss.put_object_from_file(bucket,"package_wemos.cc_index.json",'package_wemos.cc_cn_index.json')
+print "%s\n%s" % (res.status, res.read())
 

@@ -11,7 +11,7 @@ lgt:
 	tar -zcvf $(file_lgt) LGT
 
 all:esp8266 lgt
-	python do_json_cn.py $(file_esp8266) $(ver_esp8266) $(file_lgt) $(ver_lgt)
+	python do_json.py $(file_esp8266) $(ver_esp8266) $(file_lgt) $(ver_lgt)
 	mv *.gz releases/
 clean:
 	rm -rf $(file_esp8266) $(file_lgt)
