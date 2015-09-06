@@ -92,13 +92,15 @@ tools.esptool.upload.pattern="{path}/{cmd}" {upload.verbose} -cd {upload.resetme
 
 tools.esptool.upload.pattern.windows="{path}/{cmd}"  -b {upload.speed} -p "{serial.port}" write_flash -fs 32m 0x00000 "{build.path}/{build.project_name}.bin"
 
-tools.esptool.network.pattern=python "{path}/espota.py" "{serial.port}" "{network.port}" "{build.path}/{build.project_name}.bin"
+#tools.esptool.network.pattern=python "{path}/espota.py" "{serial.port}" "{network.port}" "{build.path}/{build.project_name}.bin"
 
 tools.espota.cmd=python
-tools.espota.cmd.windows=python.exe
+tools.espota.cmd.windows=espota.exe
 tools.espota.path={runtime.platform.path}/tools
+tools.espota.path.windows={runtime.tools.esptool.path}
 
 tools.espota.upload.protocol=espota
 tools.espota.upload.params.verbose=
 tools.espota.upload.params.quiet=
 tools.espota.upload.pattern="{cmd}" "{path}/espota.py" "{serial.port}" 8266 "{build.path}/{build.project_name}.bin"
+tools.espota.upload.pattern.windows="{path}/{cmd}" "{serial.port}" 8266 "{build.path}/{build.project_name}.bin"

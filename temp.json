@@ -11,7 +11,7 @@
     "platforms": [ {
       "name":"WeMos WiFi Boards",
       "architecture":"esp8266",
-      "version":"1.0.2",
+      "version":"1.0.3",
       "category":"wemos",
       "url":"https://github.com/wemos/WeMos_Boards/raw/master/releases/wemos-esp8266-1.0.2.tar.gz",
       "archiveFileName":"wemos-esp8266-1.0.2.tar.gz",
@@ -31,7 +31,7 @@
       "toolsDependencies":[ {
         "packager":"wemos",
         "name":"esptool",
-        "version":"0.4.5"
+        "version":"0.4.6"
       },
       {
         "packager":"wemos",
@@ -70,14 +70,14 @@
 
     "tools": [ {
       "name":"esptool",
-      "version":"0.4.5",
+      "version":"0.4.6",
       "systems": [
         {
             "host":"i686-mingw32",
-            "url":"https://raw.githubusercontent.com/wemos/WeMos_Boards/master/releases/esptool-win32-20150903.zip",
-            "archiveFileName":"esptool-win32-20150903.zip",
-            "checksum":"SHA-256:70bc0b249f4690236ba5bc9ee51261d5d4baf36e964a3b34902ec2ab28dbdad7",
-            "size":"4193008"
+            "url":"https://raw.githubusercontent.com/wemos/WeMos_Boards/master/releases/esptool-win32-20150906.zip",
+            "archiveFileName":"esptool-win32-20150906.zip",
+            "checksum":"SHA-256:ba4c3fb07e9d8600617f77492f2525cc17f713192c0303ad08e8703919292222",
+            "size":"7873884"
         },
         {
             "host":"x86_64-apple-darwin",
