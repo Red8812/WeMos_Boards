@@ -1,4 +1,4 @@
-ver_esp8266 = 1.0.3
+ver_esp8266 = 1.0.4
 file_esp8266 = wemos-esp8266-$(ver_esp8266).tar.gz
 
 ver_lgt = 1.0.0
