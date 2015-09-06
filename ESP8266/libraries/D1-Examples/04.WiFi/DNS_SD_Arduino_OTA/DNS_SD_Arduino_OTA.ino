@@ -2,9 +2,9 @@
 #include <ESP8266mDNS.h>
 #include <WiFiUdp.h>
 
-const char* host = "esp8266-ota";
-const char* ssid = "**********";
-const char* pass = "**********";
+const char* host = "esp8266-ota";//mdns/zeroconf/bonjour name
+const char* ssid = "**********";//your router's ssid
+const char* pass = "**********";//your router's password
 const uint16_t aport = 8266;
 
 WiFiServer TelnetServer(aport);
@@ -98,4 +98,6 @@ void loop() {
     free(sbuf);
   }
   delay(1);
+  
+  //Put your code here 
 }
