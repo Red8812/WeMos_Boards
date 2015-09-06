@@ -91,10 +91,10 @@ accessKeyId, accessKeySecret="DqGwcOvtbSIe63M7","dIEDqzWUH2AxbUnbZfVOqrDsTbkJWP"
 bucket="wemos"
 oss = OssAPI(endpoint, accessKeyId, accessKeySecret)
 
-res=oss.put_object_from_file(bucket,file_esp8266,"releases/"+file_esp8266)
+res=oss.put_object_from_file(bucket,file_esp8266,file_esp8266)
 print "%s\n%s" % (res.status, res.read())
 
-res=oss.put_object_from_file(bucket,file_lgt,"releases/"+file_lgt)
+res=oss.put_object_from_file(bucket,file_lgt,file_lgt)
 print "%s\n%s" % (res.status, res.read())
 
 res=oss.put_object_from_file(bucket,"package_wemos.cc_index.json",'package_wemos.cc_cn_index.json')
