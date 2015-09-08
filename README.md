@@ -1,5 +1,5 @@
 # WeMos_Boards
-version 1.0.1
+
 ###Arduino hardware package for WeMos Boards
 * **ESP8266** -- Based ESP8266 Board, include D1, lolin(nodemcu V3)
 * **LGT** -- Based LGT MCU
