@@ -104,8 +104,8 @@
             "host":"i686-pc-linux-gnu",
             "url":"http://www.wemos.cc/tools/esptool/esptool-0.4.5-linux32.tar.gz",
             "archiveFileName":"esptool-0.4.5-linux32.tar.gz",
-            "checksum":"SHA-256:4aa81b97a470641771cf371e5d470ac92d3b177adbe8263c4aae66e607b67755",
-            "size":"12044"
+            "checksum":"SHA-256:a7a2c3200786d7396e8cafca1b9aefe56db8ec1dab5e9163d4a19358232a7d87",
+            "size":"12055"
         }
       ]
     },
